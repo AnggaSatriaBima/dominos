@@ -1,0 +1,102 @@
+/* styles/Home.module.css */
+
+.container {
+  padding: 20px;
+  background-color: #e9ecef; /* Background color for the entire container */
+}
+
+.controlPanel {
+  padding: 20px;
+  margin: 20px 0; /* Space between control panel and other elements */
+  background-color: #ffffff; /* White background for control panel */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.controlPanel input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.controlPanel button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Added transition for transform and box-shadow */
+}
+
+.controlPanel button:hover {
+  transform: translateY(-2px); /* Moves the button up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increases the shadow for lift effect */
+}
+
+.sortAsc {
+  background-color: #007bff; /* Blue for ascending sort */
+}
+
+.sortDesc {
+  background-color: #f0ad4e; /* Yellow for descending sort */
+}
+
+.remove {
+  background-color: #d9534f; /* Red for remove action */
+}
+
+.removeDuplicates {
+  background-color: #5bc0de; /* Cyan for removing duplicates */
+}
+
+.flip {
+  background-color: #6f42c1; /* Purple for flipping cards */
+}
+
+.reset {
+  background-color: #000000; /* Black for resetting */
+}
+
+.addCard {
+  background-color: #28a745; /* Green for adding a card */
+  color: white;
+}
+
+.cardList {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Stacks cards vertically */
+}
+
+.card {
+  margin: 10px 0; /* Space between cards */
+  padding: 20px; /* Padding inside the card */
+  border: 2px solid #ccc; /* Light grey border for cards */
+  border-radius: 8px; /* Rounded corners */
+  display: flex;
+  justify-content: space-between; /* Space between values in card */
+  align-items: center; /* Center items vertically */
+  background-color: #ffffff; /* White background for each card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for card */
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges card on hover */
+}
+
+.cardValue {
+  font-size: 24px; /* Larger font for card numbers */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+.cardRemove {
+  background-color: #dc3545; /* Red background for remove button */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 5px 10px; /* Padding for button */
+  border-radius: 4px; /* Rounded corners for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
